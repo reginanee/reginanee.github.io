@@ -4,141 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruijun (Regina) NI's Personal Page</title>
+    <link rel="stylesheet" href="./main.css">
+    <title>Regina Ni's Personal Page</title>
     <link rel="icon" href="./img/icon0.jpg">
-    <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <nav>
 
+    <nav id="navbar">
+        <a href="#welcome-section">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <!-- <a href="./blog/blog.html">Blog</a> -->
+        <!-- blog unfinished -->
     </nav>
-    
-    <div class="hero-image">
-        <div class="hero-text">
-            <h1>I am Ruijun NI</h1>
-            <p>CS student @ UMN</p>
-            <p>
-                <a href="https://www.linkedin.com/in/ruijun-regina-ni-402a861aa/" class="link">LinkedIn</a>
-                <a href="https://github.com/reginanee" class="link">GitHub</a>
-            </p>
-        </div>
-    </div>
-    
+  
+  <header id="welcome-section">
+    <h1>Regina Ni</h1>
+    <p>CS Junior @ umn 👩🏻‍💻</p>
+  </header>
+  
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
 
-    <div class="column">
-        <h2>✨News✨</h2>
-        <ul>
-            <li>May 21, 2021: Summer vacation begins!🥰</li>
-            <li>March 12, 2021: Got admitted to UMN! ☃️ </li>
-        </ul>
+
+        <a href="https://regina-survey.herokuapp.com/" target="_blank"  class="project-tile">
+            <img src="./img/simple-survey.png" alt="Simple Survey Server">
+            <p>Simple Survey Server</p>
+        </a>
+        
+        <a href="https://imgaler.herokuapp.com/" target="_blank"  class="project-tile">
+            <img src="./img/audio-blog.png" alt="Audio Blog">
+            <p>Audio Blog</p>
+            <!-- <p class="project-descriptions">
+                This is an audio blog.
+            </p> -->
+        </a>
+        
+
+        <a href="https://github.com/reginanee/csci4131" target="_blank"  class="project-tile">
+            <img src="./img/weekly-scheduler.JPG" alt="Weekly Scheduler">
+            <p>Weekly Scheduler</p>
+        </a>
+
+        <a href="https://github.com/reginanee/Learn-OCaml" target="_blank"  class="project-tile">
+            <img src="./img/parcer.png" alt="Lisp Interpreter in OCaml">
+            <p>Lisp Interpreter in OCaml</p>
+        </a>
+
+        <a href="https://sme.cuhk.edu.cn/en/article/1391" target="_blank"  class="project-tile">
+            <img src="./img/fintech.png" alt="Robo-Advisor">
+            <p>Robo-Advisor</p>
+        </a>
       
+
     </div>
+  </section>
+  
+  <section id="contact" class="bg-blue">
+    <h2>Contact</h2>
+        <a href="https://github.com/reginanee">GitHub</a> 🤖 
+        <a href="https://www.linkedin.com/in/ruijunni/">LinkedIn</a> 💻
+
+  </section>
+
+</body>  
 
 
-
-    <div class="column">
-        <h2>✨Education✨</h2>
-        <ul>
-            <li>
-                B.A. in Computer Science at 
-                <a href="https://twin-cities.umn.edu/">University of Minnesota, Twin Cities</a>✨,
-                2021 - 2023
-            </li>
-            <li>
-                B.S. in Financial Engineering at 
-                <a href="https://www.cuhk.edu.cn/en">The Chinese University of Hong Kong, Shenzhen</a>, 
-                2019 - 2021
-                <button onclick="readMoreOrLess2()" id="myBtn2">Read more</button>
-                <span id = "more2">
-                    <ul>
-                        <li>Transfer to UMN, major: Financial Engineering (Stream: FinTech) </li>
-                        <li> Key courses: Data Structures,Probability and Statistics, Statistical Computing, Statistical Learning, Optimization</li>
-                        <li> Won the champion of the 2020 LUHK FinTech Challenge <a href="https://sme.cuhk.edu.cn/article/1391">(link)</a></li>
-                        <li> Worked as the general secretary of Career Development Center </li>
-                        <li> Operated an Internet forum for CUHKSZ students <a href="https://www.lgulife.com/">(link)</a> </li>
-                    </ul>
-                </span>
-            </li>
-        </ul>
-    </div>
-    
-
-    <div class="column">
-        <h2>✨Honors✨</h2>
-        <ul>
-            <li> Champion of the 2020 LUHK FinTech Challenge, Oct 2020 – Jan 2021 
-            <button onclick="readMoreOrLess()" id="myBtn">Read more</button></li>
-            <span id = "more">
-                <ul>
-                    <li> Designed and implemented a robo-advising strategy that offers investment advice </li>
-                    <li> Extracted data of financial news by performing web scraping in Python </li>
-                    <li> Perform preliminary analysis & visualize data using Matplotlib </li>
-                    <li> Built a robo-advising GUI application with PyQt5 </li>
-                    <li> Estimated the customers' investing preferences by constructing a 5-factor decision tree model </li>
-                    <li> Proposed investment recommendations by applying BP neural network algorithm and KNN with 92% accuracy </li>
-                    
-                </ul>
-            </span>
-        </ul>
-    </div>
+  <footer>
+    @Regina_Ni &#128149;
+  </footer>
 
 
-    <div class="column">
-        <h2>✨Courses✨</h2>
-
-        <button class="accordion">Major Courses</button>
-        <div class="panel">
-            <ul>
-                <li>CSC 1001 - Introduction to Computer Science: Programming Methodology</li>
-                <li>CSC 1002 - Computational Laboratory</li>
-                <li>CSCI 1933 - Intro to Algorithms and Data Structures</li>
-                <li>CSCI 2011 - Discrete Structures of CS</li>
-                <li>CSCI 2021 - Machine Architecture and Organization</li>
-                <li>CSCI 2041 - Advanced Programming Principles</li>
-                <li>CSC 3100 - Data Structures</li>
-                <li>CSCI 4131 - Internet Programming</li>
-            </ul>
-        </div>
-
-        <button class="accordion">Math/Stat Courses</button>
-        <div class="panel">
-            <ul>
-                <li>MAT 1001 - Calculus I</li>
-                <li>MAT 1002 - Calculus II</li>
-                <li>MAT 2040 - Linear Algebra</li>
-                <li>MAT 3007 - Optimization</li>
-                <li>STA 2001 - Probability and Statistics I</li>
-                <li>STA 2002 - Probability and Statistics II</li>
-                <li>STA 3050 - Statistics Software</li>
-                <li>ERG 2050 - Introduction to Data Analytics</li>
-            </ul>
-        </div>
-
-        <button class="accordion">Econ/Fina Courses</button>
-        <div class="panel">
-            <ul>
-                <li>ACT 2111 - Introductory Financial Accounting</li>
-                <li>MKT 2010 - Marketing  Management</li>
-                <li>ECO 2011 - Basic Microeconomics</li>
-                <li>ECO 3121 - Introductory Econometrics</li>
-                <li>FIN 2010 - Financial Management</li>
-                <li>FIN 2020 - Foundation of Finance</li>
-                <li>FIN 3080 - Investment Analysis and Portfolio Management</li>
-    
-            </ul>
-        </div>
-
-        <button class="accordion">General Courses</button>
-        <div class="panel">
-            <ul>
-                <li>CHI 1000 - Chinese</li>
-                <li>GEA 2000 - Modern Chinese History and Culture</li>
-                <li>GFN 1000 - In Dialogue with Nature</li>
-            </ul>
-        </div>
-    </div>
-    
-    
-    <script  src="main.js"></script>
-</body>
 </html>
